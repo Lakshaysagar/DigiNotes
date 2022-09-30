@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+    <h1>Contact</h1>
+    <div class="contact-content">
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mwkzbppd" method="POST">
+                <input type="text" placeholder="Name" name="username" required autocomplete="off">
+                <input type="email" name="Email" placeholder="Email" autocomplete="off" required>
+                <textarea name="Message" placeholder="Enter your message" cols="30" rows="10" autocomplete="off" required></textarea>
+                <input id="btn" type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+<%- include("partials/footer"); -%>

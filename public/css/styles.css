@@ -1,0 +1,100 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: #3FC1C9;
+}
+.navbar-nav  li a:hover {
+    color: black !important;
+    font-weight: bold;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #364F6B;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+.contact-form input, textarea{
+  width: 52vw;
+  padding: 0px 6px;
+  font-size: 18px;
+  border: 2px solid;
+  background-color: rgb(228, 228, 228);
+  border-radius: 5px;
+  max-width: 50vw;
+  margin: 5px;
+  
+}
+
+#btn {
+  background-color: #3FC1C9;
+}
+
+.contact-content{  
+  height: 100vh;
+  margin-top: 32px;
+  padding: 9px;
+  position: relative; 
+  overflow: hidden;
+}
+
+.contact-content::after {
+  content: "";
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.note {
+  background-color: #fff;
+  padding: 10px;
+  width: 300px;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  float: left;
+}
+
+.note h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin: 10px;
+}
+
+.note p {
+  font-family: 'McLaren';
+  font-size: 1.3rem;
+  word-wrap: break-word;
+}

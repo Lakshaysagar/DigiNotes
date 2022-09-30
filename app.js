@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
+const PORT= process.env.PORT || 3000;
 const URI = process.env.MONGODB_URL;
 mongoose.connect(URI, (err,db)=>{
   if(err) throw err;
@@ -75,6 +75,6 @@ app.get("/contact", function(req, res){
 });
 
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("Server started on port 3000");
 });

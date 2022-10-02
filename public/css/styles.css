@@ -104,12 +104,3 @@ html {
   word-wrap: break-word;
   line-height: 150%;
 }
-
-button {
-  background-color: #364F6B;
-  border-radius: 50%;
-  border: none;
-  float: right;
-  color: white;
-  margin: 10px;
-}

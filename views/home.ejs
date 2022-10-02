@@ -2,15 +2,14 @@
 <%- include("partials/header"); -%>
 
     <h1>Home</h1>
-    <p>Dynamic Blog is a website which lets you submit an article which upon approval will be up on our website and you
-      can get a good amount of reach from here!</p>
+    <p>DigiNotes is a website which lets you make Digital Notes which you can use it anytime and anywhere!</p>
     
   <%  posts.forEach(function(post){ %>
 
     <div class="note">
       <h2><%=post.title%></h2>
     <p>
-    <%=post.content.substring(0, 50) + " ..."%>
+    <%=post.content.substring(0, 150) + " ..."%>
     <a href="/posts/<%=post._id%>">Read More</a>
     </p>
     </div>

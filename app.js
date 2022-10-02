@@ -13,7 +13,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+const port = process.env.PORT || 3000;
 const URI = process.env.MONGODB_URL;
+
 mongoose.connect(URI, (err,db)=>{
   if(err) throw err;
   console.log("connected to mongodb");
@@ -51,6 +53,8 @@ app.post("/compose", function(req, res){
         res.redirect("/");
     }
   });
+
+  
 });
 
 app.get("/posts/:postId", function(req, res){
@@ -64,6 +68,7 @@ const requestedPostId = req.params.postId;
     });
   });
 
+  
 });
 
 app.get("/about", function(req, res){
@@ -75,6 +80,6 @@ app.get("/contact", function(req, res){
 });
 
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("Server started on port 3000");
 });
